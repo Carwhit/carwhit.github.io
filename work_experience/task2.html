@@ -1,9 +1,8 @@
-<link
-        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
-        rel="stylesheet"/>
-<link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
 <script src="https://cdn.tailwindcss.com/3.3.0"></script>
 <script>
     tailwind.config = {
@@ -19,65 +18,70 @@
             preflight: false,
         },
     };
+
+
 </script>
 
-<section>
-    <h2>Services</h2>
 
-    <div>
+
+<section>
+    <h2 class="text-3xl font-black text-black-600 text-center pt-8">Services</h2>
+    <div class="pb-20 mx-auto max-w-screen-xl p-10 grid grid-cols-1 md:grid-cols-3 gap-7 text-center pt-8">
         <div>
-            <div>
-                <div>
-                    <p>
+            <div class="pb-4 border rounded-lg shadow-lg">
+                <div class="border-b-2 mb-5 p-5">
+                    <p class="mb-3">
                         <strong>Design</strong>
                     </p>
-                    <button type="button">
+                    <button
+                        class="shadow-lg py-1 border w-full bg-slate-100 hover:bg-sky-700 hover:text-white hover:shadow-lg"
+                        type="button">
                         Our design services
                     </button>
                 </div>
                 <div>
-                    <ol>
-                        <li>
-                            Full site redesign
+                    <ol class="pl-5 text-left">
+                        <li class="pb-2">
+                            ✔ Full site redesign
                         </li>
-                        <li>
-                            Usability testing
+                        <li class="pb-2">
+                            ✔ Usability testing
                         </li>
-                        <li>
-                            UX & UI
+                        <li class="pb-2">
+                            ✔ UX & UI
                         </li>
-                        <li>
-                            Brand
+                        <li class="pb-2">
+                            ✔ Brand
                         </li>
                     </ol>
                 </div>
             </div>
         </div>
-
         <div>
-            <div
-            >
-                <div>
-                    <p>
+            <div class="max-w-screen-xl border rounded-lg shadow-lg mb-5 pb-5">
+                <div class="border-b-2 mb-5 p-5">
+                    <p class="mb-3">
                         <strong>Paid search</strong>
                     </p>
-                    <button type="button">
+                    <button
+                        class="shadow-lg py-1 border w-full bg-slate-100 hover:bg-sky-700 hover:text-white hover:shadow-lg"
+                        type="button">
                         Our search services
                     </button>
                 </div>
                 <div>
-                    <ol>
-                        <li>
-                            Paid search ads
+                    <ol class="pl-5 text-left">
+                        <li class="pb-2">
+                            ✔ search ads
                         </li>
-                        <li>
-                            CRO recommendations
+                        <li class="pb-2">
+                            ✔ CRO recommendations
                         </li>
-                        <li>
-                            Socials Ads
+                        <li class="pb-2">
+                            ✔ Socials Ads
                         </li>
-                        <li>
-                            Creative support
+                        <li class="pb-2">
+                            ✔ Creative support
                         </li>
                     </ol>
                 </div>
@@ -85,28 +89,30 @@
         </div>
 
         <div>
-            <div>
-                <div>
-                    <p>
+            <div class="max-w-screen-xl border rounded-lg shadow-lg mb-5 pb-5">
+                <div class="border-b-2 mb-5 p-5">
+                    <p class="mb-3">
                         <strong>Development</strong>
                     </p>
-                    <button type="button">
+                    <button
+                        class="shadow-lg py-1 border w-full bg-slate-100 hover:bg-sky-700 hover:text-white hover:shadow-lg"
+                        type="button">
                         Our development services
                     </button>
                 </div>
                 <div>
-                    <ol>
-                        <li>
-                            Ecommerce
+                    <ol class="pl-5 text-left">
+                        <li class="pb-2">
+                            ✔ Ecommerce
                         </li>
-                        <li>
-                            Technical consultancy
+                        <li class="pb-2">
+                            ✔ Technical consultancy
                         </li>
-                        <li>
-                            UX & UI
+                        <li class="pb-2">
+                            ✔ UX & UI
                         </li>
-                        <li>
-                            Web development
+                        <li class="pb-2">
+                            ✔ Web development
                         </li>
                     </ol>
                 </div>
@@ -115,48 +121,60 @@
     </div>
 </section>
 
-<section>
-    <h2>Testimonials</h2>
-
+<section class="max-w-screen-xl mx-auto">
     <div>
-        <div>
-            <div>
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"/>
+    <h2 class="text-center text-3xl font-black text-black-600">Testimonials</h2>
+    <div class="grid md:grid-cols-3 grid-cols-1 md:gap-7 gap-12 ">
+        <div class=" text-center ">
+            <div class="w-64 h-64 mx-auto text-center">
+                <img class="rounded-full scale-75" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg" />
             </div>
-            <h5>Maria Smantha</h5>
-            <h6>
+            <h5 class="pb-3 font-black text-black-600">Maria Smantha</h5>
+            <h6 class="pb-3 text-blue-600">
                 Web Developer
             </h6>
-            <p>
+            <p class="text-sm pb-5">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos
                 id officiis hic tenetur quae quaerat ad velit ab hic.
             </p>
+            <p class="text-align">⭐⭐⭐⭐⭐</p>
         </div>
-        <div>
-            <div>
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"/>
+        <div class="text-center">
+            <div class="w-64 h-64 mx-auto text-center">
+                <img class="rounded-full scale-75" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg" />
             </div>
-            <h5>Lisa Cudrow</h5>
-            <h6>
+            <div>
+            <h5 class="pb-3 font-black text-black-600">
+                Lisa Cudrow
+            </h5>
+            <h6 class="pb-3 text-blue-600">
                 Graphic Designer
             </h6>
-            <p>
+            <p class="text-sm pb-5">
                 Ut enim ad minima veniam, quis nostrum exercitationem ullam
                 corporis suscipit laboriosam, nisi ut aliquid commodi.
             </p>
-        </div>
-        <div>
-            <div>
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg"/>
+            <p class="text-align">⭐⭐⭐⭐⭐</p>
             </div>
-            <h5>John Smith</h5>
-            <h6>
+        </div>
+        <div class="text-center">
+            <div class="w-64 h-64 mx-auto text-center">
+                <img class="rounded-full scale-75" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg" />
+            </div>
+            <div>
+            <h5 class="pb-3 font-black text-black-600">
+                John Smith
+            </h5>
+            <h6 class="pb-3 text-blue-600">
                 Marketing Specialist
             </h6>
-            <p>
+            <p class="text-sm pb-5">
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                blanditiis praesentium voluptatum deleniti atque corrupti.
+                blanditiis praesentium voluptatum deleniti corrupti.
             </p>
+            <p class="text-align">⭐⭐⭐⭐⭐</p>
+            </div>
         </div>
+    </div>
     </div>
 </section>
