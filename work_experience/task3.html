@@ -1,62 +1,203 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    <pre>
-            <link
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
-            rel="stylesheet"/>
-    <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css"/>
-    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
-    <script>
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                fontFamily: {
-                    sans: ["Roboto", "sans-serif"],
-                    body: ["Roboto", "sans-serif"],
-                    mono: ["ui-monospace", "monospace"],
-                },
+<link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+        rel="stylesheet"/>
+<link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css"/>
+<script src="https://cdn.tailwindcss.com/3.3.0"></script>
+<script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            fontFamily: {
+                sans: ["Roboto", "sans-serif"],
+                body: ["Roboto", "sans-serif"],
+                mono: ["ui-monospace", "monospace"],
             },
-            corePlugins: {
-                preflight: false,
-            },
-        };
-    </script>
+        },
+        corePlugins: {
+            preflight: false,
+        },
+    };
+</script>
 
 
-    <!-- Section: Design Block -->
-    <section>
-        <h1 class="font-black text-4xl text-center pt-5 pb-10">Latest articles</h2>
-        <div class="grid grid-cols-3 grid-rows-2 gap-5 mx-auto">
-        @foreach ($articles as $article)
+<!-- Section: Design Block -->
+<section>
+    <h2>Latest articles</h2>
+
+    <div>
         <div>
-            <x-article :article="$article"/>
-        </div>    
-        @endforeach
-    </section>
-
-    <section class="ml-20">
-        <h2 class="font-black text-4xl text-center pt-5 pb-10">
-            Meet the team
-        </h2>
-
-        <div class="grid grid-cols-4 grid-rows-3 gap-10 rounded-full">
-            @foreach ($teams as $teams)
-            <div>
-            <x-staff :teams="$teams"/>
-            </div>
-            @endforeach
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/051.jpg"/>
+            <a href="#!">
+                <h5>I miss the sun</h5>
+                <p>
+                    <small>Published
+                        <u>13.01.2022</u>
+                        by Anna Maria Doe
+                    </small>
+                </p>
+            </a>
         </div>
-    </section>
-    </pre>
 
-</body>
-</html>
+        <div>
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/044.jpg"/>
+            <a href="#!">
+                <h5>
+                    Adventure in the desert
+                </h5>
+                <p>
+                    <small>Published
+                        <u>12.01.2022</u>
+                        by Mark Equel
+                    </small>
+                </p>
+            </a>
+        </div>
+
+        <div>
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/045.jpg"/>
+            <a href="#!">
+                <h5>Lonely mountain</h5>
+                <p>
+                    <small>Published
+                        <u>10.01.2022</u>
+                        by Bilbo baggins
+                    </small>
+                </p>
+            </a>
+        </div>
+
+        <div>
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/047.jpg"/>
+            <a href="#!">
+
+                <h5>Let's go!</h5>
+                <p>
+                    <small>Published
+                        <u>09.01.2022</u>
+                        by Halley Frank
+                    </small>
+                </p>
+            </a>
+        </div>
+
+        <div>
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/028.jpg"/>
+            <a href="#!">
+
+                <h5>
+                    A hut in the mountains
+                </h5>
+                <p>
+                    <small>Published
+                        <u>07.01.2022</u>
+                        by David Beak
+                    </small>
+                </p>
+            </a>
+        </div>
+
+        <div>
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/049.jpg"/>
+            <a href="#!">
+                <h5>Beautiful waterfall</h5>
+                <p>
+                    <small>Published
+                        <u>04.01.2022</u>
+                        by Joe Svan
+                    </small>
+                </p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>
+        Meet the team
+    </h2>
+
+    <div>
+        <div>
+            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.jpg"/>
+
+            <p>John Doe</p>
+            <p>Co-founder</p>
+        </div>
+
+        <div>
+            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/5.jpg"/>
+
+            <p>Lisa Ferrol</p>
+            <p>Web designer</p>
+        </div>
+
+        <div>
+            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/6.jpg"/>
+            <p>Maria Smith</p>
+            <p>
+                Senior consultant
+            </p>
+        </div>
+        <div>
+            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/7.jpg"/>
+            <p>Agatha Bevos</p>
+            <p>Co-founder</p>
+        </div>
+
+        <div>
+            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/8.jpg"/>
+            <p>Darren Randolph</p>
+            <p>
+                Marketing expert
+            </p>
+        </div>
+
+        <div>
+            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/9.jpg"/>
+            <p>Soraya Letto</p>
+            <p>SEO expert</p>
+        </div>
+
+        <div>
+            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/10.jpg"/>
+            <p>Maliha Welch</p>
+            <p>Web designer</p>
+        </div>
+
+        <div>
+            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/11.jpg"/>
+            <p>Zeynep Dudley</p>
+            <p>Web developer</p>
+        </div>
+
+        <div>
+            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/12.jpg"/>
+            <p>Avaya Hills</p>
+            <p>Copywritter</p>
+        </div>
+
+        <div>
+            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/13.jpg"/>
+            <p>Thierry Fischer</p>
+            <p>
+                Senior consultant
+            </p>
+        </div>
+
+        <div>
+            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/14.jpg"/>
+            <p>Aisling Sheldon</p>
+            <p>
+                Senior developer
+            </p>
+        </div>
+
+        <div>
+            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/15.jpg"/>
+            <p>Ayat Black</p>
+            <p>Web designer</p>
+        </div>
+    </div>
+</section>
